@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "XCSettingView"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "XCSettingView."
 
   # This description is used to generate tags and improve search results.
@@ -91,7 +91,7 @@ XCSettingView. 设置页面的 cell
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "XCSettingView/*.{h,m}"
+  s.source_files  = "XCSettingView/*.{h,m,xib}"
   s.resources = "XCSettingView/*.bundle"
   # s.exclude_files = "Classes/Exclude"
 
