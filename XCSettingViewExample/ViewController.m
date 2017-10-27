@@ -8,7 +8,11 @@
 
 #import "ViewController.h"
 
+#import "XCSettingView.h"
+
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet XCSettingView *oneView;
 
 @end
 
@@ -16,13 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    self.oneView.leftImage = [UIImage imageNamed:@"XCSettingView.bundle/icon_go_arrow.png"];
 }
 
 

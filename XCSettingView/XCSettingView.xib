@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -39,7 +39,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_qianjin_hs" translatesAutoresizingMaskIntoConstraints="NO" id="c8S-g2-iol">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XCSettingView.bundle/icon_go_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="c8S-g2-iol">
                     <rect key="frame" x="353" y="19" width="7" height="12"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="12" id="g3w-U5-dzf"/>
@@ -52,7 +52,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dian2" translatesAutoresizingMaskIntoConstraints="NO" id="Ga4-dw-PeE">
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XCSettingView.bundle/icon_red_dot" translatesAutoresizingMaskIntoConstraints="NO" id="Ga4-dw-PeE">
                     <rect key="frame" x="48" y="16" width="6" height="6"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="6" id="GON-dF-vxJ"/>
@@ -79,7 +79,7 @@
         </view>
     </objects>
     <resources>
-        <image name="dian2" width="6" height="6"/>
-        <image name="icon_qianjin_hs" width="6" height="12"/>
+        <image name="XCSettingView.bundle/icon_go_arrow" width="16" height="16"/>
+        <image name="XCSettingView.bundle/icon_red_dot" width="16" height="16"/>
     </resources>
 </document>
