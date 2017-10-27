@@ -81,7 +81,7 @@
 // 设置默认参数
 - (void)setupDefaults
 {
-    UIView *contentView = [[[NSBundle mainBundle] loadNibNamed:@"XCSettingView" owner:self options:nil] lastObject];
+    UIView *contentView = [[[NSBundle bundleForClass:[XCSettingView class]] loadNibNamed:@"XCSettingView" owner:self options:nil] lastObject];
     self.contentView    = contentView;
     [self addSubview:contentView];
     
@@ -173,43 +173,4 @@
 }
 
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
