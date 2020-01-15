@@ -39,8 +39,14 @@ IB_DESIGNABLE
 /** 👀 是否显示左侧的图片 👀 */
 @property (assign, nonatomic) IBInspectable BOOL showLeftIcon;
 
+/** 👀 是否显示右侧 > 图片 👀 */
+@property (assign, nonatomic) IBInspectable BOOL showArrowIcon;
+
 /** 👀 是否显示子标题 👀 */
 @property (assign, nonatomic) IBInspectable BOOL showSubTitle;
+
+/** 👀 子标题是否左对齐（左：YES；右：NO）默认 左对齐 👀 */
+@property (assign, nonatomic) IBInspectable BOOL subTitleAlignLeft;
 
 /** 👀 是否显示小红点：显示在 主标题的右上角 👀 */
 @property (assign, nonatomic) BOOL showRedDot;

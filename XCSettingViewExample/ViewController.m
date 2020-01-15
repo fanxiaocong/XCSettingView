@@ -18,11 +18,10 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
     self.oneView.leftImage = [UIImage imageNamed:@"XCSettingView.bundle/icon_go_arrow.png"];
 }
-
 
 @end

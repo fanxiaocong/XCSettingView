@@ -27,27 +27,25 @@
 
 /** 👀 内容视图 👀 */
 @property (strong, nonatomic) IBOutlet UIView *contentView;
-
 /** 👀 左侧图标视图 👀 */
 @property (weak, nonatomic) IBOutlet UIImageView *leftIcon;
-
 /** 👀 标题LB 👀 */
 @property (weak, nonatomic) IBOutlet UILabel *titleLB;
-
 /** 👀 子标题TextField 👀 */
 @property (weak, nonatomic) IBOutlet UITextField *subTitleF;
-
 /** 👀 小红点视图 👀 */
 @property (weak, nonatomic) IBOutlet UIImageView *redDotView;
+/** 👀 右侧箭头图标 👀 */
+@property (weak, nonatomic) IBOutlet UIImageView *arrowIcon;
 
 /** 👀 标题LB的左侧 与 父控件的距离的约束 👀 */
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleLBLeftToSuperConstraint;
-
 /** 👀 左侧图片宽度的约束 👀 */
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *leftIconWidthConstraint;
-
 /** 👀 左侧图片高度的约束 👀 */
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *leftIconHeightConstraint;
+/** 👀 右侧箭头图标右边距离父视图距离的约束 👀 */
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *arrowIconRightToSuperConstraint;
 
 @end
 
@@ -58,8 +56,7 @@
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
-    if (self = [super initWithCoder:aDecoder])
-    {
+    if (self = [super initWithCoder:aDecoder]) {
         // 设置默认参数
         [self setupDefaults];
     }
@@ -69,8 +66,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
-    if (self = [super initWithFrame:frame])
-    {
+    if (self = [super initWithFrame:frame]) {
         // 设置默认参数
         [self setupDefaults];
     }
@@ -144,17 +140,27 @@
 {
     _showLeftIcon = showLeftIcon;
     
-    if (showLeftIcon)
-    {
+    if (showLeftIcon) {
         // 显示左侧的图片
         self.titleLBLeftToSuperConstraint.constant = 30 + K_LEFT_ICON_WH;
         self.leftIcon.hidden = NO;
-    }
-    else
-    {
+    } else {
         // 隐藏左侧的图片
         self.titleLBLeftToSuperConstraint.constant = 15;
         self.leftIcon.hidden = YES;
+    }
+}
+
+- (void)setShowArrowIcon:(BOOL)showArrowIcon
+{
+    _showArrowIcon = showArrowIcon;
+    
+    if (showArrowIcon) {
+        self.arrowIcon.hidden = NO;
+        self.arrowIconRightToSuperConstraint.constant = 35;
+    } else {
+        self.arrowIcon.hidden = YES;
+        self.arrowIconRightToSuperConstraint.constant = 15;
     }
 }
 
@@ -170,6 +176,13 @@
     _showRedDot = showRedDot;
     
     self.redDotView.hidden = !showRedDot;
+}
+
+- (void)setSubTitleAlignLeft:(BOOL)subTitleAlignLeft
+{
+    _subTitleAlignLeft = subTitleAlignLeft;
+    
+    self.subTitleF.textAlignment = subTitleAlignLeft ? NSTextAlignmentLeft : NSTextAlignmentRight;
 }
 
 @end

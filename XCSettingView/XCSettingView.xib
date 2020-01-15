@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomSettingCellView">
             <connections>
+                <outlet property="arrowIcon" destination="c8S-g2-iol" id="yft-3j-Gdn"/>
+                <outlet property="arrowIconRightToSuperConstraint" destination="1Ag-Pa-Q6I" id="yBH-hv-f65"/>
                 <outlet property="contentView" destination="0Qi-JM-wdm" id="u88-DU-Q8M"/>
                 <outlet property="leftIcon" destination="h30-hn-Bvq" id="HBB-01-N6F"/>
                 <outlet property="leftIconHeightConstraint" destination="j9j-8J-s8c" id="OJO-dg-Lgf"/>
@@ -34,7 +36,7 @@
                     </constraints>
                 </imageView>
                 <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="240" horizontalCompressionResistancePriority="760" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="xa6-Gu-qOf">
-                    <rect key="frame" x="69" y="16" width="269" height="18"/>
+                    <rect key="frame" x="69" y="16" width="271" height="18"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <textInputTraits key="textInputTraits"/>
@@ -62,7 +64,7 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="c8S-g2-iol" firstAttribute="leading" secondItem="xa6-Gu-qOf" secondAttribute="trailing" constant="15" id="1Ag-Pa-Q6I"/>
+                <constraint firstAttribute="trailing" secondItem="xa6-Gu-qOf" secondAttribute="trailing" constant="35" id="1Ag-Pa-Q6I"/>
                 <constraint firstItem="GkK-5Q-MMU" firstAttribute="leading" secondItem="0Qi-JM-wdm" secondAttribute="leading" constant="50" id="4O2-kZ-Sk9"/>
                 <constraint firstItem="h30-hn-Bvq" firstAttribute="centerY" secondItem="0Qi-JM-wdm" secondAttribute="centerY" id="7z2-IC-toD"/>
                 <constraint firstItem="h30-hn-Bvq" firstAttribute="centerY" secondItem="c8S-g2-iol" secondAttribute="centerY" id="9iC-gB-6Jd"/>
